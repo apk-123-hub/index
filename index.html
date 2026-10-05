@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar ul{
+            list-style-type: none;
+            display: flex;
+
+            gap: 10px;
+
+        }
+        .navbar ul a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar{
+            background-color: brown;
+            padding: 5px;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            display: none;
+        }
+        @media (max-width:600px){
+            .navbar ul{
+                flex-direction: column;
+            }
+        }
+        @media (min-width:500px){
+            .navbar ul{
+                flex-direction: row;
+                background-color: blue;
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <ul>
+         <li><a href=""></a>home</li>
+         <li><a href=""></a>about</li>
+         <li><a href=""></a>contact</li>
+         <li><a href=""></a>career</li>
+      </ul>
+      <div>
+        <img src="menu.png">
+      </div>
+    </nav>
+</body>
+</html>
